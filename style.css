@@ -1,0 +1,133 @@
+/* Base css */
+
+.alignleft {
+    float:left;
+    margin-right:15px;
+}
+.alignright {
+    float:right;
+    margin-left:15px;
+}
+.aligncenter {
+    display:block;
+    margin: 0 auto 15px;
+}
+a:focus {
+    outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height:auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body {
+    height: 100%
+}
+body {}
+a:hover {
+    text-decoration: none;
+}
+/* remove chrome input field's unwanted yellow background color */
+input:-webkit-autofill, input:-webkit-autofill:hover,input:-webkit-autofill:focus {
+    -webkit-box-shadow:0 0 0px 1000px white inset !important;
+}
+.section-bg {background-image: url(img/beauty-2.jpg)}
+.section-padding {
+    position: relative;
+}
+.section-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 70%;
+}
+.section-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+    background-size: cover;
+
+}
+.section-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #4DB2AB;
+    opacity: .8;
+}
+.section-padding .container {
+    position: relative;
+
+}
+.contact-form input, .contact-form textaria {
+    padding: 13px;
+    border: 1px solid #fff;
+    width: 100%;
+    color: #333;
+    margin-bottom: 17px;
+}
+.contact-form h2 {
+    color: #fff;
+}
+input:focus, textarea:focus, button:focus {
+    outline: none;
+}
+.contact-form input:focus {
+    border: 1px solid #333;
+}
+.contact-form input[type=submit] {
+    width: auto;
+    padding: 14px 30px;
+    color: #4DB2AB;
+    font-weight: 700;
+}
+.appoinment-text {
+    padding-left: 105px;
+}
+.appoinment-text ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.appoinment-text ul li {
+    display: inline-block;
+    padding: 6px;
+    color: #333;
+    font-weight: 300;
+}
+.appoinment-text ul li i {
+    margin-right: 10px;
+}
+a.boxed-btn {
+    display: block;
+    background: #4BA2A5;
+    margin-left: 7px;
+    height: 38px;
+    width: 130px;
+    padding: 6px 13px;
+    color: #333;
+    border-radius: 2px;
+}
+a.boxed-btn:hover {
+    color: #fff;
+}
+
+
+
+
+
