@@ -1,0 +1,98 @@
+/* Base css */
+
+.alignleft {
+    float:left;
+    margin-right:15px;
+}
+.alignright {
+    float:right;
+    margin-left:15px;
+}
+.aligncenter {
+    display:block;
+    margin: 0 auto 15px;
+}
+a:focus {
+    outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height:auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body {
+    height: 100%
+}
+body {}
+a:hover {
+    text-decoration: none;
+}
+/* remove chrome input field's unwanted yellow background color */
+input:-webkit-autofill, input:-webkit-autofill:hover,input:-webkit-autofill:focus {
+    -webkit-box-shadow:0 0 0px 1000px white inset !important;
+}
+.zigzag-text-bg-1 {background-image: url(img/bg-1.jpg)}
+.zigzag-text-bg-2 {background-image: url(img/bg-2.jpg)}
+
+.section-padding {
+    background-size: cover;
+    background-position: center;
+}
+.zigzag-text {
+    position: relative;
+    z-index: 2;
+    padding-right: 50px;
+    color: #fff;
+}
+.zigzag-text:after {
+    position: absolute;
+    left: -4895%;
+    top: 0;
+    height: 100%;
+    width: 5000%;
+    background-color: #3C8B5E;
+    content: "";
+    z-index: -1;
+    transform: skew(18deg);
+    opacity: .8;
+}
+
+a.boxed-btn {
+    background: #333;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.zigzag-text {
+    position: relative;
+    z-index: 2;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.zigzag-text-bg-2 .zigzag-text:after {
+    left: -30px;
+    right: auto;
+}
+.zigzag-text-bg-2 .zigzag-text {
+    padding-left: 50px;
+    padding-right: 0px;
+}
+.section-padding.zigzag-text-bg-2 {
+    overflow: hidden;
+}
+
+
+
