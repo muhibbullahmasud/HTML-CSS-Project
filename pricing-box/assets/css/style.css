@@ -1,0 +1,132 @@
+/* Base css */
+
+.alignleft {
+    float:left;
+    margin-right:15px;
+}
+.alignright {
+    float:right;
+    margin-left:15px;
+}
+.aligncenter {
+    display:block;
+    margin: 0 auto 15px;
+}
+a:focus {
+    outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height:auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body {
+    height: 100%;
+    color: #868686;
+;
+
+}
+body {}
+a:hover {
+    text-decoration: none;
+}
+/* remove chrome input field's unwanted yellow background color */
+input:-webkit-autofill, input:-webkit-autofill:hover,input:-webkit-autofill:focus {
+    -webkit-box-shadow:0 0 0px 1000px white inset !important;
+}
+section.section-padding {
+    padding: 80px 0;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-title h2 span {
+    color: #2D805D;
+}
+.single-pricing-box {
+    border: 1px solid #ddd;
+    padding: 60px;
+    text-align: center;
+}
+.single-pricing-box h3 {
+    text-transform: uppercase;
+}
+.pricing-icon {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.pricing-icon img {
+    max-width: 85px;
+}
+.pricing-list {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.pricing-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single-pricing-box h3.pricing-count {
+    text-transform: none;
+}
+a.border-btn {
+    display: inline-block;
+    border: 1px solid #2D805D;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #333;
+}
+.single-pricing-box .border-btn {
+    color: #333;
+}
+i.fas.fa-check {
+    color: #2D805D;
+}
+i.fas.fa-times {
+    color: red;
+}
+.single-pricing-box img {
+    margin-left: 25px;
+}
+a.border-btn:hover {
+    background: #2D805D;
+    -webkit-transition:.2s;
+    transition: .2s;
+}
+.pricing-list i {
+    margin-right: 5px;
+}
+.pricing-list li {
+    line-height: 30px;
+}
+.single-pricing-box:hover {
+    border-color: #2D805D;
+    box-shadow: 0 0 50px #ccc;
+    -webkit-transition:0.2s;
+    transition: 0.2s;
+}
+.single-pricing-box:hover .pricing-icon {
+    color: #2D805D;
+}
+.single-pricing-box:hover .pricing-icon img {
+    opacity: .9;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+.pricing-list ul li {
+    -webkit-transition:.2s;
+    transition: .2s;
+}
+.pricing-list ul li:hover {
+    padding-left: 3px;
+}
