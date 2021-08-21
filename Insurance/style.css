@@ -1,0 +1,63 @@
+/* Base css */
+
+body {
+    color: #575757;
+    font-size: 15px;
+    line-height: 1.7;
+   margin: 0 auto 50px;
+}
+
+section.section-padding {
+    padding: 80px 0;
+}
+.section-title {
+    margin-bottom: 60px;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+.gray-bg {background-color: #fafafa;}
+.service-bg-1 {background-image: url(assets/img/boat.jpg);}
+.service-bg-2 {background-image: url(assets/img/bussiness.jpg);}
+.service-bg-3 {background-image: url(assets/img/house.jpg);}
+.service-bg-4 {background-image: url(assets/img/life.jpg);}
+
+.section-title h2 {
+    font-size: 25px;
+}
+.single-service-item {
+    background: #fff;
+    transition: .2s;
+}
+.service-bg {
+    height: 350px;
+    background-color: #ddd;
+    background-position: center;
+}
+
+.service-content {
+    padding: 5px;
+}
+a.service-more-btn {
+    display: inline-block;
+    padding: 10px 0;
+    border-radius: 50px;
+    font-weight: 700;
+    
+}
+.service-content a.service-more-btn {
+    color: #3D87AD;
+}
+i.fas.fa-long-arrow-alt-right {
+    padding-left: 8px;
+}
+a.service-more-btn:hover {
+    background: #3D87AD;
+    color: #fff;
+    padding: 10px 20px;
+    transition: .2s
+}
+.single-service-item:hover {
+    box-shadow: 0 2px 2px #3D87AD;
+}
