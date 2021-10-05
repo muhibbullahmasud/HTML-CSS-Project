@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+.header-area {
+    background-color: #23232E;
+    padding: 20px 0;
+    
+}
+
+.header-area .logo {
+    text-align: center;
+    padding: 50px 0;
+}
+.text {
+    text-align: center;
+    color: #fff;
+    
+}
+.text h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    
+}
+.text p {
+    margin-bottom: 50px;
+    line-height: 28px;
+    font-size: 18px;
+}
+.slider {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+}
+.slider i {
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 15px;
+    height: 15px;
+    width: 15px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.content {
+    background-image: url(images/content-bg.png);
+    color: #464b4f;
+    background-size: 100% auto;
+    background-position: cover;
+    overflow: hidden;
+    
+}
+.container {
+    width: 65%;
+    margin: auto;
+}
+.content-top {
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+    padding: 20px 0;
+}
+.content-top p {
+    margin: 70px 0
+}
+.content-bottom h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 70px;
+    margin: 0;
+}
+.content-bottom h3 {
+    text-transform: uppercase;
+}
+.content-bottom .template {
+    float: left;
+    width: 31%;
+    margin-right: 2%;
+}
+.content-bottom .brand {
+    float: left;
+    overflow: hidden;
+    width: 31%;
+   margin-right: 2%;
+}
+.content-bottom .dreams {
+    width: 31%;
+    overflow: hidden;
+    float: right;
+    
+}
+.content-bottom {
+    margin: 0;
+}
+.content-bottom p {
+    line-height: 30px;
+    font-size: 16px;
+    color: #AEAEAE;
+}
+.portfolio {
+    overflow: hidden;
+    background-color: #23232F;
+    padding: 30px 0;
+}
+.portfolio h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+}
+.portfolio h3 a {
+    color: #fff;
+    text-transform: capitalize;
+}
+.work-catagory {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.portfolio ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.portfolio ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 5px;
+    
+}
+.portfolio ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    padding: 3px 0;
+
+}
+.portfolio ul li a:hover {
+    border-bottom: 2px solid #7B77C9
+}
+.portfolio ul .active a {
+    border-bottom: 2px solid #7B77C9 
+}
+.col-1-3 {
+	width: 31.33%;
+	margin: 5px 1%;
+	float: left;
+	overflow: hidden;
+}
+.work-columns {
+    margin-bottom: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+.work-columns img {
+    margin-top: 60px;
+}
+.work-columns a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+
+}
+.work-columns h3 {
+    margin-bottom: 5px;
+}
+.col-1-3 h3 + a {
+    color: #6d7590;
+    font-size: 14px;
+}
+.portfolio .button {
+    text-align: center;
+
+}
+.portfolio .button a {
+    text-decoration: none;
+    color: #fff;
+    background: #7B77C9;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.photography {
+    overflow: hidden;
+    text-align: center;
+    background-image: url(images/content-bg.png);
+    color: #464b4f;
+    background-size: 100% auto;
+    background-position: cover;
+    padding: 30px 0;
+}
+.photography-text h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    margin: 30px 0;
+    font-size: 50px;
+
+}
+.photography-text p {
+    margin: 30px 20%;
+}
+.photography .button a {
+    text-decoration: none;
+    color: #fff;
+    background: #7B77C9;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 30px;
+}
+.subscribe {
+    background-color: #23232F;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+.infinite i {
+    font-size: 50px;
+}
+.subscribe form input {
+    color: #c8c8c8;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Segoe UI';
+}
+.subscribe input[type=text] {
+    margin-right: 5px;
+}
+.subscribe input[type=submit] {
+    background: #7B77C9;
+    color: #fff;
+    cursor: pointer;
+}
+.footer-area {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url(images/content-bg.png);
+}
+.footer-area ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-area ul li {
+    display: inline;
+    margin: 0 10px;
+    
+}
+.footer-area ul li a {
+    color: #dbdbdb;
+    font-size: 40px;
+    
+}
+.copyright {
+    color: #7c7c7c;
+    padding: 30px 0;
+}
