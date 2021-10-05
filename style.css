@@ -1,133 +1,472 @@
-/* Base css */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
 
-.alignleft {
-    float:left;
-    margin-right:15px;
-}
-.alignright {
-    float:right;
-    margin-left:15px;
-}
-.aligncenter {
-    display:block;
-    margin: 0 auto 15px;
-}
-a:focus {
-    outline: 0 solid;
-}
-img {
-    max-width: 100%;
-    height:auto;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 15px;
-    font-weight: 700;
-}
-html,
-body {
-    height: 100%
-}
-body {}
-a:hover {
-    text-decoration: none;
-}
-/* remove chrome input field's unwanted yellow background color */
-input:-webkit-autofill, input:-webkit-autofill:hover,input:-webkit-autofill:focus {
-    -webkit-box-shadow:0 0 0px 1000px white inset !important;
-}
-.section-bg {background-image: url(img/beauty-2.jpg)}
-.section-padding {
-    position: relative;
-}
-.section-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 70%;
-}
-.section-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 60%;
-    background-size: cover;
+/* ===================================
+    About
+====================================== */
 
-}
-.section-bg:after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    content: "";
-    background: #4DB2AB;
-    opacity: .8;
-}
-.section-padding .container {
-    position: relative;
+/*
+    Theme Name: phototime
+    Theme URI:
+    Author: Muhibbullah Masud
+    Author URI:
+    Description: photo related tamplate
+    Tags: one page, creative, html5
 
-}
-.contact-form input, .contact-form textaria {
-    padding: 13px;
-    border: 1px solid #fff;
-    width: 100%;
-    color: #333;
-    margin-bottom: 17px;
-}
-.contact-form h2 {
-    color: #fff;
-}
-input:focus, textarea:focus, button:focus {
-    outline: none;
-}
-.contact-form input:focus {
-    border: 1px solid #333;
-}
-.contact-form input[type=submit] {
-    width: auto;
-    padding: 14px 30px;
-    color: #4DB2AB;
-    font-weight: 700;
-}
-.appoinment-text {
-    padding-left: 105px;
-}
-.appoinment-text ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.appoinment-text ul li {
-    display: inline-block;
-    padding: 6px;
-    color: #333;
-    font-weight: 300;
-}
-.appoinment-text ul li i {
-    margin-right: 10px;
-}
-a.boxed-btn {
-    display: block;
-    background: #4BA2A5;
-    margin-left: 7px;
-    height: 38px;
-    width: 130px;
-    padding: 6px 13px;
-    color: #333;
-    border-radius: 2px;
-}
-a.boxed-btn:hover {
-    color: #fff;
-}
+ */
+
+/* ===================================
+    Table of Content
+====================================== */
 
 
+/*  - Typography
+    -body
+    - header-area
+        -menu-area
+        -welcome-text
+        -social-icons
+        
+    - getting-started
+    - design-area
+    - community-area
+    - subscribe-area
+    - download-area
+    - footer-area    */
+
+    /*-------------------- Typography ----------------------------- */
+
+    @font-face {
+        font-family: "GothamBold";
+        src: url('webfonts/GothamRoundedBold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: "GothamBook";
+        src: url('webfonts/GothamRoundedBook.woff') format('woff');
+    }
+
+    body,
+     p {
+        font-family: "GothamBook";
+        font-size: 12px;
+        line-height: 1.3em;
+    }
+    h2 {
+        font-family: "GothamBold";
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+    }
+     h5 {
+        font-size: 12px;
+        margin-bottom: 20px;
+        font-family: "GothamBook";
+        letter-spacing: 2px;
+    
+    }
+    h3 {
+        color: #16a085;
+        font-family: "GothamBold";
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.3em;
+        letter-spacing: 2px;
+    }
+    p {
+        font-size: 10px;
+        color: #9C9D9D;
+        letter-spacing: 1px;
+        line-height: 2em;
+    }
+    strong {
+        color: #000;
+    }
+
+
+    /*----------------- body ---------------------------*/
+    body {
+        margin: 0;
+    }
+
+    /*------------------ header-area ----------------------------*/
+
+    .header-area {
+        background: url(images/header-bg.jpg) no-repeat 0 0 / 100% 100%;
+        overflow: hidden;
+        padding: 25px 0 15px 0;
+        text-align: center;
+        color: #fff;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 960px;
+    }
+
+    /*----------------- menu-area -----------------------------*/
+
+    .menu-area ul {
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-area ul li {
+        display: inline;
+        margin: 24px;
+    }
+    .menu-area ul li a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-family: "GothamBold";
+        border-bottom: 1px solid transparent;
+        padding-bottom: 8px;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+    }
+    .menu-area ul li a:hover {
+        color: #16a085;
+        border-bottom: 1px solid #fff;
+    }
+
+    .menu-area ul .logo img {
+        width: 40px;
+        height: auto;
+    }
+    .menu-area ul .logo a {
+        border: none;
+    }
+    .menu-area ul .logo a:hover {
+        border: none;
+    }
+
+    /*----------------------- welcome-text ----------------------*/
+
+    .welcome-text {
+        margin-top: 180px;
+        overflow: hidden;
+
+    }
+
+    .btn {
+        text-decoration: none;
+        color: #fff;
+        background: #16a085;
+        text-transform: uppercase;
+        padding: 10px 25px;
+        border-radius: 2px;
+        display: inline-block;
+        font-size: 10px;
+        letter-spacing: 1px;
+        font-family: "GothamBold";
+        border: 1px solid transparent;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+    }
+    .btn:hover {
+        background: #fff;
+        color: #16a085;
+        border: 1px solid #16a085;
+    }
+    
+    /*------------------------------------ social-media -------------------------------*/
+
+    .social-media {
+        overflow: hidden;
+        margin-top: 150px;
+    }
+    .social-media ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    .social-media ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    .social-media ul li a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+    }
+    .social-media ul li a:hover {
+        color: #7A7878;
+    }
+
+    /*----------------------------- getting-started -------------------------------------*/
+
+    .getting-started {
+        overflow: hidden;
+        background-color: #f5f6f7;
+
+    
+    }
+    .getting-started .text-area {
+        margin-top: 40px;
+        padding-bottom: 30px;
+        background: url(images/hand.png) no-repeat;
+        background-size: 50% auto;
+        background-position: top right;
+    }
+    .getting-started .start-text {
+        width: 50%;
+    }
+    .getting-started .text-area p {
+        margin-bottom: 30px;
+    }
+
+    /*---------------------- design ---------------------------*/
+    .design-area {
+        overflow: hidden;
+        margin-top: 30px;
+    }
+    .design {
+        background: url(images/mobile.png);
+        overflow: hidden;
+        background-size: 30%;
+        background-repeat: no-repeat;
+        background-position: top left;
+        margin-right: 20%;
+    }
+    .design-text {
+        overflow: hidden;
+        float: right;
+        width: 40%;
+    }
+    .slide {
+        margin: 50px 0;
+    }
+    .arrow i {
+        color: #000;
+        font-size: 20px;
+        margin-right: 10px;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+
+    }
+    .arrow i:hover {
+        color: #16a085;
+    }
+
+        /*-------------------------- community-area -----------------------*/
+
+        .community-area {
+            overflow: hidden;
+            background: #F5F6F7;
+            padding: 50px 0;
+        }
+        .community-slide i {
+            color: #000;
+            font-size: 20px;
+            margin-right: 10px;
+            -webkit-transition: .4s;
+            -o-transition: .4s;
+            transition: .4s;
+    
+        }
+        .community-slide i:hover {
+            color: #16a085;
+        }
+        .community-area .community-slide {
+            padding: 30px;
+            font-size: 20px;
+            overflow: hidden;
+            text-align: right;
+    
+        }
+        .community-text {
+            overflow: hidden;
+            width: 20%;
+            float: left;
+            text-align: center;
+            margin-right: 15px;
+            margin-top: 100px;
+        }
+        .community-text h3 {
+            color: #444;
+        }
+        .community-text p {
+            font-size: 8px;
+        }
+        .community-image {
+            overflow: hidden;
+            float: left;
+            width: 77%;
+        }
+        .slide-image img {
+            float: left;
+            overflow: hidden;
+            width: 48%;
+            margin-right: 2%;
+        }
+        .slide-image img:last-child {
+            margin-right: 0;
+        }
+
+    /*------------------------- subscribe-area ---------------------*/
+
+    .subscribe-area {
+        overflow: hidden;
+        background: url(images/subscribe-bg.jpg) no-repeat 0 0 / 100% 100%;
+        padding: 200px 0;
+        text-align: center;
+
+    }
+    .subscribe-area h2 {
+        font-size: 20px;
+    
+    }
+    .subscribe-area form {
+        width: 290px;
+        margin: 0 auto;
+    }
+    .subscribe-area form input[type=email] {
+        background: #fff;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border: none;
+        font-weight: bold;
+        border-radius: 3px 0 0 3px;
+        margin-right: 0px;
+        letter-spacing: 2px;
+        overflow: hidden;
+        width: 195px;
+    }
+    .subscribe-area form button {
+        background: #16a085;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 0 3px 3px 0;
+        margin-left: -4px;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+        float: right;
+    }
+    .subscribe-area form button:hover {
+        cursor: pointer;
+        color: #16a085;
+        background: #7A7878;
+    }
+
+    /*------------------- download-area ----------------------------*/
+
+    .download-area {
+        overflow: hidden;
+        text-align: center;
+        background: #F5F6F7;
+        padding: 30px 0;
+    }
+    .download-area h3 {
+        color: #444;
+    }
+    .download-area p {
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .apple {
+        width: 180px;
+        display: inline-block;
+        border: 1px solid transparent;
+        
+    }
+
+    
+    .android {
+        width: 180px;
+        display: inline-block;
+        border: 1px solid transparent;
+        
+    }
+
+    .apple a {
+        text-decoration: none;
+        font-size: 18px;
+        padding: 8px 10px;
+        color: #fff;
+        background: #1BBC9B;
+        transition: .5s;
+
+    }
+    .apple:hover a {
+        background: #16A085;
+    }
+    .android a {
+        text-decoration: none;
+        font-size: 18px;
+        padding: 8px 16px;
+        color: #fff;
+        background: #1BBC9B;
+        transition: .5s;
+
+    }
+    .android:hover a {
+        background: #16A085;
+    }
+    .download-btn {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .download-btn i {
+        font-size: 20px;
+        text-align: right;
+        color: #fff;
+    }
+    .download-btn button {
+        background: #16A086;
+        border: none;
+        padding: 8px 8px;
+        width: 32px;
+        height: 37px;
+    }
+  
+
+    /*--------------------------- footer-area ------------------------*/
+    .footer-area {
+        overflow: hidden;
+        padding: 30px o;
+        margin: 30px 0;
+    }
+    .footer-text {
+        float: left;
+    }
+    .footer-logo {
+        overflow: hidden;
+        float: right;
+    }
+    .footer-text a {
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 5px;
+        border-right: 2px solid #16a085;
+        padding-right: 10px;
+        color: #444;
+        font-family: "GothamBold";
+        text-transform: uppercase;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+    }
+    .footer-text a:hover {
+        color: #16A085;
+    }
 
 
 

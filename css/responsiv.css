@@ -1,0 +1,38 @@
+
+@media all and (max-width: 768px) {
+.menu-area ul li {
+    display: block;
+}
+.subscribe-area h2 {
+    font-size: 18px;
+}
+.subscribe-area form {
+    width: 200px;
+}
+.subscribe-area form input[type=email] {
+    width: 110px;
+}
+.community-text {
+    float: none;
+    width: auto;
+}
+.community-image {
+    width: auto;
+}
+
+@media all and (max-width: 655px) {
+.apple {
+    margin-bottom: 40px;
+}
+}
+@media all and (max-width: 430px) {
+    .footer-text {
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+    .footer-logo {
+        float: none;
+        text-align: center;
+    }
+}
